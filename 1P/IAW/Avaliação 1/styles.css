@@ -1,0 +1,84 @@
+head {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    margin: 0px;
+}
+
+img { 
+    width: 150px;
+    height: 150px;
+    border: 5px solid purple;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+p {
+    font-size: larger;
+    text-align: left;
+}
+
+dt {
+    margin: 15px;
+    font-size: large;
+}
+
+a {
+    color: lightblue;
+    font-size: large;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: green;
+    border-radius: 10px;
+    font-size: larger;
+    color: lightblue;
+}
+
+button:hover {
+    background: darkgreen;
+    text-decoration: underline;
+}
+
+h1, h2, dl {
+    margin-left: 15px;
+}
+
+.cabecalho {
+    background: linear-gradient(to left, purple, darkblue, purple);
+    margin: 0px;
+    height: 65px;
+    width: 100%;
+    color: lightblue;
+    border-top: 30px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+.rodape {
+    background: linear-gradient(to left, purple, darkblue, purple);
+    margin: 0px;
+    height: 300px;
+    width: 100%;
+    color: lightblue;
+    border-top: 30px solid transparent;
+    border-left: 50px solid transparent;
+    text-align: justify;
+}
+
+.link {
+    margin-left: 75%;
+    color: lightblue;
+}
+
+.texto {
+    margin-left: 15px;
+    margin-top: 30px;
+}

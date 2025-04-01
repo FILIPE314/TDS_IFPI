@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="n1">Texto 1</label>
+    <input type="text" name="n1" id="in1">
+
+    <label for="n2">Texto 2</label>
+    <input type="text" name="n2" id="in2">
+    <p class="saida"></p>
+
+    <script>
+        let n1 = document.querySelector('#in1')
+        let n2 = document.querySelector('#in2')
+        let botao = document.querySelector('.botao');
+        let saida = document.querySelector('.saida');
+
+        n1.addEventListener('keyup', () => {
+            n2.value = n1.value.toUpperCase()
+        })
+    </script>
+</body>
+</html>

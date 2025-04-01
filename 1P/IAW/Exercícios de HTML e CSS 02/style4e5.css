@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to left, brown, black);
+    height: 100vh;
+    font-family: constantia;
+}
+
+h1 {
+    color: lightblue;
+}
+
+h2 {
+    color: lightgreen;
+}
+
+p {
+    color: white;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}

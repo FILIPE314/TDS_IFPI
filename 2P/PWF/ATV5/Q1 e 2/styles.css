@@ -1,0 +1,14 @@
+.caixaf {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    visibility: visible;
+}
+
+.botaof {
+    margin-bottom: 10px;
+}
+
+.texto {
+    font-size: 16;
+}

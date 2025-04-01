@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../1pg_principal/Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PERGUNTA</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="name" id="t1"></h1>
+        <div class="questao">
+            <h2>Como você deve conversar com outras pessoas?</h2>
+            <button id="baud" onclick="reproduzirAudio()"><i class="fa fa-audio-description" aria-hidden="true"></i></button>
+            <audio id="audio" src="/4pg_perguntas/Audio_descripiton/7.mp3"></audio>
+        </div>
+        <div>
+            <img src="https://www.colegiologosofico.com.br/wordpress/wp-content/uploads/2018/08/Foto-rodinha-IV-1024x768.jpg" alt="">
+        </div>
+        <div id="resultado"></div>
+        <div class="response">
+            <div id="opcao">
+                <div class="coluna Esquerda">
+                    <button class="resposta" onclick="verificarResposta(this)" resposta-correta="false">1.Gritando sem motivo</button>
+                    <button class="resposta" onclick="verificarResposta(this)" resposta-correta="false">2.Ignorar a pessoa</button>
+                </div>
+                <div class="coluna Direita">
+                    <button class="resposta" onclick="verificarResposta(this)" resposta-correta="true">3.Falando de forma clara e respeitosa</button>
+                    <button class="resposta" onclick="verificarResposta(this)" resposta-correta="false">4.Não levar nada a sério</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <h2 id="mensagem"></h2>
+            <div id="pontuacao">Pontuação: 0</div>
+            <button id="proximoBotao" onclick="proximaFase()">&#9654;</button>
+            <button id="tentarNovamenteBotao" onclick="tentarNovamente()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</body>
+</html>

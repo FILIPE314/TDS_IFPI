@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../1pg_principal/Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PERGUNTA</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="name" id="t1"></h1>
+        <div class="questao">
+            <h2>Qual desses comportamentos é certo?</h2>
+            <button id="baud" onclick="reproduzirAudio()"><i class="fa fa-audio-description" aria-hidden="true"></i></button>
+            <audio id="audio" src="/4pg_perguntas/Audio_descripiton/10.mp3"></audio>
+        </div>
+        <div>
+            <img src="https://blog.alicerceedu.com.br/wp-content/uploads/2022/03/030322-Blog-Pais-tambem-pedem-desculpas-Imagem-2.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://blog.colegioclasseams.com/assets/img/posts/220dfcc2c102c17b437a849334b4ccac.jpg" alt="">
+        </div>
+        <div id="resultado"></div>
+        <div class="response">
+            <div id="opcao">
+                <div class="coluna Esquerda">
+                    <button onclick="verificarResposta(this)" resposta-correta="true">1.Pedir desculpas quando necessário</button>
+                    <button onclick="verificarResposta(this)" resposta-correta="false">2.Ignorar o que os outros sentem</button>
+                </div>
+                <div class="coluna Direita">
+                    <button onclick="verificarResposta(this)" resposta-correta="false">3.Culpar os outros sempre que algo der errado</button>
+                    <button onclick="verificarResposta(this)" resposta-correta="false">4.Fazer de conta que nada aconteceu</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <h2 id="mensagem"></h2>
+            <div id="pontuacao">Pontuação: 0</div>
+            <button id="proximoBotao" onclick="proximaFase()">&#9654;</button>
+            <button id="tentarNovamenteBotao" onclick="tentarNovamente()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</body>
+</html>

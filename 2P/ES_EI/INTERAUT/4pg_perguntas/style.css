@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0 ;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    background-color: darkslategray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    margin-top: 20%;
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 10px 10px black;
+    margin-bottom: -150px;
+}
+
+/* Responsividade */
+@media only screen and (min-width: 430px) {
+    body {
+        width: 430px;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 430px) {
+    img {
+        width: 80%;
+    }
+}
+
+.questao {
+    gap: 5%;
+    position: relative;
+    display: flex;
+}
+
+.questao h2 {
+    color: lightblue;
+    font-style: normal;
+    padding: 3%;
+    text-shadow: 0px 3px 3px black;
+    background: linear-gradient(to right, purple, tomato);
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    box-shadow: 0px 10px 10px black;
+    position: relative;
+}
+
+button {
+    background: linear-gradient(to right, purple, darkblue);
+    border-radius: 100px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: cursive;
+    border: 0px;
+    position: relative;
+    transition: 1s;
+    box-shadow: 0px 10px 10px black;
+    justify-content: center;
+    text-align: center;
+}
+
+button:hover {
+    background: aqua;
+    color: black;
+    box-shadow: 0 0 50px lightblue;
+}
+
+#resultado{
+    text-align: center;
+    align-content: center;
+    margin-top: 200px;
+}
+
+#opcao{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 0px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+/* Popup de acerto ou error */
+.popup {
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkslategray;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#pontuacao {
+    color: gold;
+    padding: 5px;
+}
+
+#proximoBotao, #tentarNovamenteBotao, #baud {
+    font-size: 25px;
+}
+
+#proximoBotao, #tentarNovamenteBotao {
+    padding: 10px 20px;
+    border-radius: 100%;
+}

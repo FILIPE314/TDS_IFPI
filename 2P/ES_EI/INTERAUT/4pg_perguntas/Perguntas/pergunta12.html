@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../1pg_principal/Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PERGUNTA</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="name" id="t1"></h1>
+        <div class="questao">
+            <h2>Se alguém não entender o que você quer dizer, o que você deve fazer?</h2>
+            <button id="baud" onclick="reproduzirAudio()"><i class="fa fa-audio-description" aria-hidden="true"></i></button>
+            <audio id="audio" src="/4pg_perguntas/Audio_descripiton/12.mp3"></audio>
+        </div>
+        <div>
+            <img src="https://hotelinternacionalgravatal.com.br/wp-content/uploads/Interacao-infantil.jpg" alt="">
+        </div>
+        <div id="resultado"></div>
+        <div class="response">
+            <div id="opcao">
+                <div class="coluna Esquerda">
+                    <button onclick="verificarResposta(this)" resposta-correta="false">1.Mudo de assunto</button>
+                    <button onclick="verificarResposta(this)" resposta-correta="true">2.Tento explicar de outro jeito</button>
+                </div>
+                <div class="coluna Direita">
+                    <button onclick="verificarResposta(this)" resposta-correta="false">3.Paro de falar com a pessoa</button>
+                    <button onclick="verificarResposta(this)" resposta-correta="false">4.Deixo para lá</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <h2 id="mensagem"></h2>
+            <div id="pontuacao">Pontuação: 0</div>
+            <button id="proximoBotao" onclick="proximaFase()">&#9654;</button>
+            <button id="tentarNovamenteBotao" onclick="tentarNovamente()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</body>
+</html>

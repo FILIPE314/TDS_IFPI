@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11</title>
+</head>
+
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">11. Exibir Endereços em um Único Parágrafo
+        Crie uma página com vários parágrafos. Cada um deve conter uma informação sobre o
+        endereço: Logradouro, Número, Bairro, Complemento, e Cidade. Use getElementById() e
+        innerHTML para exibir todas essas informações em um único parágrafo, separadas por vírgulas.</h1>
+
+    <p id="1">Havan Campo grande</p>
+    <p id="2">Casa 31</p>
+    <p id="3">Monsenhor Gil</p>
+    <p id="4">Rua dos Ypês</p>
+    <p id="5">São paulo</p>
+
+    <script>
+        var p1 = document.getElementById('1');
+        var p2 = document.getElementById('2');
+        var p3 = document.getElementById('3');
+        var p4 = document.getElementById('4');
+        var p5 = document.getElementById('5');
+
+        document.write('<p>' + p1.innerHTML + ', ' + p2.innerHTML + ', ' + p3.innerHTML + ', ' + p4.innerHTML + ', ' + p5.innerHTML + '</p>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left, lightgreen, lightblue);
+    text-align: justify;
+    font-size: larger;
+}
+
+h1 {
+   background: whitesmoke;
+   border-radius: 100px;
+   text-align: center;
+}
+
+h2 {
+    background: whitesmoke;
+    border-radius: 100px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+ul, li {
+    text-align: left;
+}
+
+.romano {
+    list-style-type: upper-roman;
+}
+
+.placa1 {
+    list-style-image: url(imagens/download\ \(2\).png);
+}
+
+.placa2 {
+    list-style-image: url(imagens/images.png);
+}
+
+.placa3 {
+    list-style-image: url(imagens/download.png);
+}
+
+.placa4 {
+    list-style-image: url(imagens/download\ \(1\).png);
+}
+
+.placa5 {
+    list-style-image: url(imagens/download.jpg);
+}
+
+.livro {
+    list-style-type: upper-roman;
+}
+
+.f {
+    text-align: right;
+}
