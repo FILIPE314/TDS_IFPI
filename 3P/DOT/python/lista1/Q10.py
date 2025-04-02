@@ -15,44 +15,29 @@ def main():
 if __name__ == '__main__':
     main()
 # Questão 10 letra b
-def maximo(lista):
+def maximo(num1, num2, num3, num4):
+    lista = [num1, num2, num3, num4]
     maior = lista[0]
     for i in lista:
         if i > maior:
             maior = i
-    return maior
-def maior(list_A, list_B, list_C, list_D):
-    return  f'\nO maior número da serie A é: {maximo(list_A)}\n' + \
-            f'O maior número da serie B é: {maximo(list_B)}\n' + \
-            f'O maior número da serie C é: {maximo(list_C)}\n' + \
-            f'O maior número da serie D é: {maximo(list_D)}\n'
+    return f'O maior número da série é: {maior}'
 def main():
     print('Digite 4 séries de números contendo 4 numeros cada série para saber o maior numero de cada serie')
-    while True:
-        list_A = []
-        list_B = []
-        list_C = []
-        list_D = []
+    i = 0
+    while i < 4:
+        i += 1
+        list_global = []
         try:
-            print('Números da série A')
-            for i in range(4):
-                num = int(input(f'Número {i + 1}: '))
-                list_A.append(num)
-            print('Números da série B')
-            for i in range(4):
-                num = int(input(f'Número {i + 1}: '))
-                list_B.append(num)
-            print('Números da série C')
-            for i in range(4):
-                num = int(input(f'Número {i + 1}: '))
-                list_C.append(num)
-            print('Números da série D')
-            for i in range(4):
-                num = int(input(f'Número {i + 1}: '))
-                list_D.append(num)
-            print(maior(list_A, list_B, list_C, list_D))
-            break
+            print(f'Números da série A{i}')
+            num1 = int(input(f'Número {i}: '))
+            num2 = int(input(f'Número {i}: '))
+            num3 = int(input(f'Número {i}: '))
+            num4 = int(input(f'Número {i}: '))
+            print(maximo(num1, num2, num3, num4))
+            list_global.append(maximo(num1, num2, num3, num4))
         except:
+            i -= 1
             print('Ops... Valor inválido!')
 if __name__ == '__main__':
     main()
