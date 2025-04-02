@@ -1,19 +1,19 @@
 # =============================================================================================================================================================
 # Questão 10 letra a
-def maior(num):
-    list = []
-    list.append(num)
-    return f'O maio número é: {max(list)}'
-def main():
-    print('Digite 4 números a seguir para saber qual o maior deles: ')
-    try:
-        for i in range(4):
-            num = int(input(f'Número {i + 1}: '))
-        print(maior(num))
-    except:
-        print('Ops... Valor inválido!')
-if __name__ == '__main__':
-    main()
+# def maior(num):
+#     list = []
+#     list.append(num)
+#     return f'O maio número é: {max(list)}'
+# def main():
+#     print('Digite 4 números a seguir para saber qual o maior deles: ')
+#     try:
+#         for i in range(4):
+#             num = int(input(f'Número {i + 1}: '))
+#         print(maior(num))
+#     except:
+#         print('Ops... Valor inválido!')
+# if __name__ == '__main__':
+#     main()
 # Questão 10 letra b
 def maximo(num1, num2, num3, num4):
     lista = [num1, num2, num3, num4]
