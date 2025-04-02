@@ -15,11 +15,17 @@ def main():
 if __name__ == '__main__':
     main()
 # Questão 10 letra b
+def maximo(lista):
+    maior = lista[0]
+    for i in lista:
+        if i > maior:
+            maior = i
+    return maior
 def maior(list_A, list_B, list_C, list_D):
-    return  f'\nO maior número da serie A é: {max(list_A)}\num' + \
-            f'O maior número da serie B é: {max(list_B)}\num' + \
-            f'O maior número da serie C é: {max(list_C)}\num' + \
-            f'O maior número da serie D é: {max(list_D)}\num'
+    return  f'\nO maior número da serie A é: {maximo(list_A)}\n' + \
+            f'O maior número da serie B é: {maximo(list_B)}\n' + \
+            f'O maior número da serie C é: {maximo(list_C)}\n' + \
+            f'O maior número da serie D é: {maximo(list_D)}\n'
 def main():
     print('Digite 4 séries de números contendo 4 numeros cada série para saber o maior numero de cada serie')
     while True:
