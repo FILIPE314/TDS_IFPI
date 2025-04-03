@@ -9,7 +9,7 @@ def pares(list):
     for i in list:
         if i % 2 == 0:
             quantidade_pares += 1
-    return f'Quantidade de números pares: {quantidade_pares}\n'
+    return f'\nQuantidade de números pares: {quantidade_pares}\n'
 # Resposta b)
 def list_pares(list):
     todos_os_pares = []
@@ -18,19 +18,28 @@ def list_pares(list):
             todos_os_pares.append(i)
     return f'Aqui estão todos os pares {todos_os_pares}\n'
 # Resposta c)
-def list_impares(list):
+def impares(list):
     quantidade = 0
     for i in list:
         if i % 2 != 0:
             quantidade += 1
     return f'Quantidade de números ímpares: {quantidade}\n'
+# Resposta d)
+def list_impares(list):
+    todos_os_impares = []
+    for i in list:
+        if i % 2 != 0:
+            todos_os_impares.append(i)
+    return f'Aqui estão todos os ímpares {todos_os_impares}\n'
 def main():
-    # Letra a
+    # Letra a)
     lista = list(range(100))
     print(pares(lista))
-    # Letra b
+    # Letra b)
     print(list_pares(lista))
-    # Letra c
+    # Letra c)
+    print(impares(lista))
+    # Letra d)
     print(list_impares(lista))
 if __name__ == '__main__':
     main()
