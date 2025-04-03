@@ -17,6 +17,7 @@ def list_pares(list):
         if i % 2 == 0:
             todos_os_pares.append(i)
     return f'Aqui estã todos os pares {todos_os_pares}\n'
+# Resposta c)
 def main():
     # Letra a
     lista = list(range(100))
