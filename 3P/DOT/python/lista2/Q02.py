@@ -23,7 +23,6 @@ def main():
             lista.append(num)
         except:
             print(f'\nOps... Algo de errado não está certo, digite um valor válido!')
-            break
     print(num_negative(lista))
     print(num_positive(lista))
 if __name__ == '__main__':
