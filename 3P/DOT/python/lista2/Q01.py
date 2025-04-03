@@ -32,14 +32,17 @@ def list_impares(list):
             todos_os_impares.append(i)
     return f'Aqui estão todos os ímpares {todos_os_impares}\n'
 def main():
-    # Letra a)
-    lista = list(range(100))
-    print(pares(lista))
-    # Letra b)
-    print(list_pares(lista))
-    # Letra c)
-    print(impares(lista))
-    # Letra d)
-    print(list_impares(lista))
+    try:
+        # Letra a)
+        lista = list(range(100))
+        print(pares(lista))
+        # Letra b)
+        print(list_pares(lista))
+        # Letra c)
+        print(impares(lista))
+        # Letra d)
+        print(list_impares(lista))
+    except:
+        print(f'Ops... Algo de errado não está certo, digite um valor válido!')
 if __name__ == '__main__':
     main()
