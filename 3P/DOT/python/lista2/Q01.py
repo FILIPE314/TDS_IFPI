@@ -16,13 +16,21 @@ def list_pares(list):
     for i in list:
         if i % 2 == 0:
             todos_os_pares.append(i)
-    return f'Aqui estã todos os pares {todos_os_pares}\n'
+    return f'Aqui estão todos os pares {todos_os_pares}\n'
 # Resposta c)
+def list_impares(list):
+    quantidade = 0
+    for i in list:
+        if i % 2 != 0:
+            quantidade += 1
+    return f'Quantidade de números ímpares: {quantidade}\n'
 def main():
     # Letra a
     lista = list(range(100))
     print(pares(lista))
     # Letra b
     print(list_pares(lista))
+    # Letra c
+    print(list_impares(lista))
 if __name__ == '__main__':
     main()
