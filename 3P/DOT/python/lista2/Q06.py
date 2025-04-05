@@ -5,6 +5,7 @@
 def faturamento(quantidade, precos):
     media = 0
     abaixo_media = 0
+    abaixo_media_detalhado = []
     soma_faturamentos = 0
     todos_faturamentos = []
     for i in range(20):
@@ -15,10 +16,12 @@ def faturamento(quantidade, precos):
     for i in range(len(todos_faturamentos)):
         if todos_faturamentos[i] < media:
             abaixo_media += 1
+            abaixo_media_detalhado.append(todos_faturamentos[i])
     return  f'\nCada faturamento: {todos_faturamentos}\n' + \
             f'\nFaturamento total: {soma_faturamentos:.2f}\n' + \
             f'\nMédia de faturamentos: {media}\n' + \
-            f'\nFaturamentos abaixo da média: {abaixo_media}'
+            f'\nFaturamentos abaixo da média: {abaixo_media}\n' + \
+            f'\nTodos abaixo da média detalhadamente: {abaixo_media_detalhado}\n'
 def main():
     quantidade = list(range(11, 31))
     precos = list(range(21, 41))
