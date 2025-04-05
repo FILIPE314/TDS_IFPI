@@ -28,7 +28,6 @@ def main():
     while True:
         try:
             print(faturamento(quantidade, precos))
-            # print(f'{quantidade}\n {precos}')
             break
         except:
             print(f'\nOps... Algo de errado não está certo, digite um valor válido!')
