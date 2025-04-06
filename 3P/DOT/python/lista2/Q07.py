@@ -11,7 +11,6 @@ def main():
         try:
             valor_aribuido = int(input('Digite um valor para saber se ele esta atribuido a uma lista: '))
             print(verifica(lista, valor_aribuido))
-            print(lista)
             break
         except:
             print(f'\nOps... Algo de errado não está certo, digite um valor válido!')
