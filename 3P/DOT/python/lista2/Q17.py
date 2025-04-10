@@ -1,6 +1,7 @@
 # 17) Ler uma lista W de 10 elementos, depois ler um valor V. Contar e escrever quantas vezes o 
 # valor V ocorre na lista W e escrever também em que posições (índices) da lista W o valor V 
 # aparece.
+# Caso o valor V não ocorra nenhuma vez na lista W, escrever uma mensagem informando isto.
 from random import randint 
 def aparecer(w, v):
     vezes = 0
@@ -9,7 +10,9 @@ def aparecer(w, v):
         if w[i] == v:
             vezes += 1
             posicoes.append(i)
-    return f'\nO valor {v} apareceu {vezes}, nas posições {posicoes}\n'
+    if vezes == 0:
+        return f'\nO valor {v} não apareceu nenhuma vez na lista\n'
+    return f'\nO valor {v} apareceu {vezes} vezes nas posições {posicoes}\n'
 def main():
     w = []
     v = randint(1, 10)
