@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERGUNTA</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <h1 class="name" id="t1"></h1>
+    <div class="questao">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h2>
+    </div>
+    <div id="resultado"></div>
+    <div class="response">
+        <div id="opcao">
+            <div class="coluna Esquerda">
+                <button class="resposta" onclick="verificarResposta(this)" resposta-correta="false">Beutrano</button>
+                <button class="resposta" onclick="verificarResposta(this)" resposta-correta="false">Fulano</button>
+            </div>
+            <div class="coluna Direita">
+                <button class="resposta" onclick="verificarResposta(this)" resposta-correta="true">Ciclano</button>
+                <button class="resposta" onclick="verificarResposta(this)" resposta-correta="false">Beutrano²</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="popup" id="popup">
+        <h2 id="mensagem"></h2>
+        <div id="pontuacao">Pontuação: 0</div>
+        <button id="proximoBotao" onclick="proximaFase()">Próxima Fase</button>
+        <button id="tentarNovamenteBotao" onclick="tentarNovamente()">Tentar Novamente</button>
+    </div>
+</body>
+</html>

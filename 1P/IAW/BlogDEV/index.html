@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blog DEV</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imagens/icone.png">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <a class="navbar-brand" id="inicio">Blog DEV</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#final">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container my-5">
+    <div class="row">
+      
+      <div class="col-md-3">
+        <div class="box mb-4 p-3 border">
+          <h2 class="sidebar-title">Navegação</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#ultima">Última postagem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recente">Postagem em alta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tabela">Mais Lidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.w3.org/Style/Examples/007/Overview.pt_BR.html">Site de deias CSS</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box p-3 border">
+          <h2 class="sidebar-title">Links Úteis</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.freecodecamp.org/portuguese/news/manual-de-html-aprendizagem-de-html-para-iniciantes/">Guia de HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.devmedia.com.br/guia/css/38149">Guia de CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/">Documentação do Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.hostinger.com.br/tutoriais/ferramentas-de-desenvolvimento-web">Ferramentas de Desenvolvimento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="main-content">
+          <h2 class="main-title mb-4">Postagens</h2>
+
+          <article class="post mb-5 p-4 border rounded">
+            <div class="post-thumbnail mb-3">
+              <img src="imagens/p1.jpg" alt="Post Thumbnail" class="img-fluid">
+            </div>
+            <h3 class="post-title">Dicas de Design Responsivo</h3>
+            <p class="post-excerpt">Aprenda como criar sites que funcionam bem em diferentes dispositivos com estas dicas essenciais sobre design responsivo.</p>
+            <a target="_blank" href="https://www.webshare.com.br/blog/design-responsivo/" class="btn btn-outline-secondary">Leia mais</a>
+          </article>
+
+          <article id="recente" class="post mb-5 p-4 border rounded">
+            <div class="post-thumbnail mb-3">
+              <img src="imagens/p2.png" alt="Post Thumbnail" class="img-fluid">
+            </div>
+            <h3 class="post-title">Box model e layouts</h3>
+            <p class="post-excerpt">
+              O box model é o modelo de layout usado em CSS que define como os elementos são posicionados e dimensionados. Vamos aprender mais sobre ele e como usá-lo para fazer layouts responsivos.</p>
+            <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model" class="btn btn-outline-secondary">Leia mais</a>
+          </article>
+
+          <article class="post mb-5 p-4 border rounded">
+            <div class="post-thumbnail mb-3">
+              <img src="imagens/p3.webp" alt="Post Thumbnail" class="img-fluid">
+            </div>
+            <h3 class="post-title">Programação para WEB</h3>
+            <p class="post-excerpt">Aprenda a programar para web com HTML, CSS e JavaScript, e veja como utilizar essas ferramentas para construir interfaces mais interativas e atraentes.</p>
+            <a target="_blank" href="https://www.youtube.com/@programacaoweb" class="btn btn-outline-secondary">Leia mais</a>
+          </article>
+
+          <article id="tabela" class="post mb-5 p-4 border rounded">
+            <div class="post-thumbnail mb-3">
+              <img id="ultima" src="imagens/p4.webp" alt="Post Thumbnail" class="img-fluid">
+            </div>
+            <h3 class="post-title">Tabelas</h3>
+            <p class="post-excerpt">Aprenda a construir tabelas com HTML e CSS, e veja como personalizar os estilos e acrescentar interatividade com JavaScript.</p>
+            <a target="_blank" href="https://www.w3schools.com/css/css_table.asp" class="btn btn-outline-secondary">Leia mais</a>
+            <a href="#inicio">Início</a>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="box mb-4 p-3 border">
+          <h2 class="sidebar-title">Sobre o Blog</h2>
+          <p>No Blog DEV, oferecemos conteúdo completo e atualizado sobre criação e desenvolvimento de sites e aplicações web. Se você é um desenvolvedor iniciante ou um profissional experiente, aqui você encontrará tutoriais, dicas e ferramentas essenciais para aprimorar suas habilidades.</p>
+        </div>
+
+        <div class="box p-3 border">
+          <h2 class="sidebar-title">Contato</h2>
+          <p>Entre em contato para sugestões, dúvidas ou apenas para compartilhar suas ideias. Gostamos muito de receber feedback dos leitores!</p>
+          <a href="#final">Contatos</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="final" class="py-4 border-top">
+    <div class="container text-left">
+      <dl>
+        <dt>Contato do desenvolvedor</dt>
+        <dd><a target="_blank" href="https://github.com/DanielBacelar35">Nome: Daniel Bacelar</a></dd>
+        <dd>Telefone e whatsapp: (86) 9 8812-5548 </dd>
+      </dl>
+      <hr>
+      <p>&copy; 2024 Blog DEV. Todos os direitos reservados.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Política de Privacidade</a></li>
+        <li class="list-inline-item"><a href="#">Termos de Uso</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Responsividade */
+@media only screen and (min-width: 430px) {
+    body {
+        width: 430px;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}

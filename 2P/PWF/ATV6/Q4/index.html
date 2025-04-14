@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="campo">Campo</label>
+    <input type="text" name="campo" id="icampo">
+
+    <script>
+        let campo = document.querySelector('#icampo');
+
+        campo.addEventListener('focus', () => {
+            campo.style = 'background-color: yellow;'
+        });
+
+        campo.addEventListener('blur', () => {
+            campo.style = 'background-color: initial;'
+        }); 
+    </script>
+</body>
+
+</html>

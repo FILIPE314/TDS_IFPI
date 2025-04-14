@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+    background-color: gray;
+    border-radius: 100px;
+    text-align: center;
+}
+h3, p {
+    color: darkslategray;
+}
+p {
+    text-align: left;
+    width: 300px;
+}
+.instagram {
+    background-image: url(imagens/download\ \(3\).png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+.github {
+    background-image: url(imagens/download.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+.list {
+    list-style-type: none;
+}
+a, a:visited, a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+a:active, a:hover {
+    color: red;
+    background: black;
+}

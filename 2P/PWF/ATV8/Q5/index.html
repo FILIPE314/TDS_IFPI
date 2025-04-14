@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Cães e Fatos sobre Gatos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Galeria de Cães e Fatos sobre Gatos</h1>
+    <form id="dogForm">
+        <label for="dogCount">Número de imagens de cães:</label>
+        <input type="number" id="dogCount" name="dogCount" min="1" max="50" value="5">
+        <button type="submit">Carregar Imagens</button>
+    </form>
+    <div class="gallery" id="dogGallery"></div>
+
+    <form id="catForm">
+        <label for="catCount">Número de fatos sobre gatos:</label>
+        <input type="number" id="catCount" name="catCount" min="1" max="10" value="5">
+        <button type="submit">Carregar Fatos</button>
+    </form>
+    <div class="facts" id="catFacts"></div>
+
+</body>
+</html>

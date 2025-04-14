@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <label for="emocao">Selecione uma emoção</label>
+    <select name="emocao" id="iemocao">
+        <option value="alegria">Alegria</option>
+        <option value="tristeza">Tristeza</option>
+        <option value="raiva">Raiva</option>
+    </select>
+    <img>
+
+    <script>
+        let emocao = document.querySelector('#iemocao');
+        let image = document.querySelector('img');
+        
+        emocao.addEventListener('change', () => {
+            if (emocao.value == 'alegria') {
+                image.src = 'q3-imagens/alegria.png';
+
+            } else if (emocao.value == 'tristeza') {
+                image.src = 'q3-imagens/tristeza.png';
+
+            } else if (emocao.value == 'raiva') {
+                image.src = 'q3-imagens/raiva.png';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../1pg_principal/Imagens/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Seleção de Personagens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted class="video">
+            <source src="Imagens/lv_0_20250129200226.mp4">
+        </video>
+        <h1 class="name" id="t1">Personagens</h1>
+        <div class="characters">
+            <!-- personagem -->
+            <div class="character-card" data-id="1">
+                <img src="Imagens/Bastião.jpeg" alt="personagem01">
+                <div class="text">
+                    <h2>Bastião</h2>
+                    <p class="description"><strong>INTERAÇÃO</strong> <br> Aprimore suas habilidades de interação e comunicação com o Bastião.</p>
+                </div>
+            </div> 
+        </div>
+        
+        <div id="confirmation" class="hidden">
+            <button id="confirm-button">Confirmar</button>
+        </div>
+
+        <div id="confirmation-message" class="hidden">
+            <span id="selected-character-name"></span>
+            <p>Preparado para começar sua aventura?!</p>
+        </div>
+    </div>
+</body>
+</html>

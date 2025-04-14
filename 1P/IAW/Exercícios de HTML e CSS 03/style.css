@@ -1,0 +1,58 @@
+* {
+    font-size: 16px;
+}
+
+.tilt-neon-font {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT" 0, "YROT" 0;
+}
+
+body {
+    background: linear-gradient(to left, #b3cce2, #D9CCC1);
+    height: 100vh;
+    font-family: Arial;
+}
+
+h1,
+h2 {
+    color: #D9CCC1;
+    background-color: #005eb0;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #024059;
+    font-size: 1.0rem;
+    text-align: justify;
+}
+
+.strikethrough {
+    position: relative;
+}
+
+.strikethrough:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}

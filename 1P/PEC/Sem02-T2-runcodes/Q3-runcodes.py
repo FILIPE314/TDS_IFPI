@@ -1,0 +1,5 @@
+volumeatual=input()
+volumeatual=int(volumeatual)
+volumedesejado=input()
+volumedesejado=int(volumedesejado)
+print(volumedesejado-volumeatual)
