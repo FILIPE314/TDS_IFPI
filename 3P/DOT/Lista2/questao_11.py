@@ -18,10 +18,10 @@ def main():
         
         while True:
             print(f'''\n{'='*10} MENU {'='*10}
-1) Cadastrar nome
-2) Pesquisar nome
-3) Listar todos os nomes
-0) Sair do programa''')
+                    1) Cadastrar nome
+                    2) Pesquisar nome
+                    3) Listar todos os nomes
+                    0) Sair do programa''')
             opcao = int(input("\nDigite sua escolha: "))
             if opcao == 1:
                 nome = input("\nDigite o nome que deseja adicionar: ")
@@ -49,7 +49,7 @@ def main():
             else:
                 print("\nERRO: Digite uma opção válida!")                
     except ValueError:
-        print("\nERRO: Digite um valor numérico para a quantidade de posições, tente novamente!")
+        print("\nOps... Valor inválido ")
         main()
 if __name__=="__main__":
     main()
