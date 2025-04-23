@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(Imagens/pixel-lakes-sunny-and-sunset-pixel-art-landscape-series-v0-qrslnce2f0sb1.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    background-size: 215vh 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+
+/* Responsividade */
+@media only screen and (min-width: 430px) {
+    body {
+        width: 430px;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}
+
+.questao {
+    color: lightblue;
+    font-family: "Jersey 10", serif;
+    font-style: normal;
+    padding: 3%;
+    text-shadow: 0px 3px 3px black;
+    background: linear-gradient(to right, purple, tomato);
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    box-shadow: 0px 10px 10px black;
+    animation: titulo 3s 1;
+    position: relative;
+}
+
+button {
+    background: linear-gradient(to right, purple, darkblue);
+    border-radius: 100px;
+    color: white;
+    padding: 15px;
+    font-family: cursive;
+    transition: 1s;
+    border: 0px;
+    position: relative;
+}
+
+button:hover {
+    background: aqua;
+    color: black;
+    box-shadow: 0 0 50px lightblue;
+}
+
+#resultado{
+    text-align: center;
+    align-content: center;
+    margin-top: 200px;
+}
+
+#opcao{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 200px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+/* Popup de acerto ou error */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#pontuacao {
+    color: black;
+    padding: 5px;
+}

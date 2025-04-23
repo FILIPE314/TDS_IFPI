@@ -1,0 +1,248 @@
+/* Formatação básica */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Corpo do site */
+body {
+    background-color: black;
+}
+
+/* Primeira parte da página */
+/* div que vai rodar o jogo */
+.divisao {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+/* Responsividade */
+@media only screen and (min-width: 430px) {
+    body {
+        width: 430px;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 430px;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* botão 1 */
+.b1 {
+    background: linear-gradient(to right, purple, darkblue);
+    border-radius: 100px;
+    color: white;
+    padding: 15px;
+    margin-top: 150px;
+    font-family: "Jersey 10", serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s;
+    border: 0px;
+    animation: b1 2s 1;
+    position: relative;
+}
+
+.botaosair {
+    animation: b1-animation 2s;
+    top: 300px;
+}
+
+.b1:hover {
+    background: aqua;
+    color: black;
+    box-shadow: 0 0 50px lightblue;
+}
+
+/* animações botão iniciar */
+@keyframes b1 {
+    0% {top: 300px;}
+    50% {top: -30px;}
+    100% {top: 0px;}
+}
+
+@keyframes b1-animation {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 300px;
+    }
+}
+
+/* título */
+.name {
+    color: lightblue;
+    font-family: "Jersey 10", serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-style: normal;
+    padding: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-shadow: 0px 3px 3px black;
+    background: linear-gradient(to right, purple, tomato);
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    box-shadow: 0px 10px 10px black;
+    animation: titulo 3s 1;
+    position: relative;
+}
+
+.titulosair {
+    animation: titulo-animation 3s;
+    left: -1000px;
+}
+
+
+/* animaçõe do titulo */
+@keyframes titulo {
+    0% {left: -1000px;}
+    50% {left: 30px;}
+    100% {left: 0px}
+}
+
+@keyframes titulo-animation {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -1000px;
+    }
+}
+/* Segunda parte da página */
+/* input */
+.ct1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+    padding: 10px;
+    margin-left: -200%;
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    box-shadow: 0px 10px 10px black;
+}
+
+.ct1entrar {
+    animation: ct1-animation 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.ct1sair {
+    animation: ct1sair 2s;
+    animation-fill-mode: forwards;
+}
+
+/* animações do input */
+@keyframes ct1-animation {
+    from {
+        right: 0%;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+@keyframes ct1sair {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+/* botão 2 */
+.b2 {
+    background: linear-gradient(to right, purple, darkblue);
+    border-radius: 100px;
+    color: white;
+    padding: 15px;
+    font-family: "Jersey 10", serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-style: normal;
+    border: 0px;
+    position: relative;
+    margin-top: 20px;
+    margin-right: -200%;
+    transition: 0.5s;
+}
+
+.b2entrar {
+    animation: b2-animation 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.b2sair {
+    animation: sair 2s;
+    animation-fill-mode: forwards;
+}
+
+.b2:hover {
+    background: aqua;
+    color: black;
+    box-shadow: 0 0 50px lightblue;
+}
+
+/* animações do botão 2 */
+@keyframes b2-animation {
+    from {
+        left: 0%;
+    }
+    
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes sair {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+/* mensagem de confirmação */
+#mensagem {
+    margin-top: 240px;
+    margin-bottom: 10px;
+    position: relative;
+    background: skyblue;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+}

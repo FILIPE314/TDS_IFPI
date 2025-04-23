@@ -1,0 +1,23 @@
+li {
+    font-size: larger;
+}
+
+.insta {
+    background-image: url(imagens/Screenshot_20240319-111904~2.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+    border-radius: 10px;
+}
+
+.github {
+    background-image: url(imagens/Screenshot_20240422-161604~2.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+    border-radius: 150px;
+}

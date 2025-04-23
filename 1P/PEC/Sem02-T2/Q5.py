@@ -1,0 +1,7 @@
+print("Você sabe quantosa quilômetros tem daqui da terra até Marte?")
+KM=input()
+KM=int(KM)
+print("E a quantos quilômetros por hora sua NAVE ESPACIAL viaja?")
+naveespacial=input()
+naveespacial=int(naveespacial)
+print("Sua nave chegaria a Marte em",KM/naveespacial,"horas")

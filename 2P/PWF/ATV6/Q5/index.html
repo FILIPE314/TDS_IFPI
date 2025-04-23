@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="senha">senha</label>
+    <input type="password" name="senha" id="isenha"> <br>
+    <span class="mensagemErro"></span>
+
+    <script>
+        let senha = document.querySelector('#isenha');
+        let mensagemErro = document.querySelector('.mensagemErro');
+
+        senha.addEventListener('blur', () => {
+            if (senha.value.trim().length < 8) {
+                mensagemErro.innerHTML = 'A senha não pode ser menor que 8 digitos.'
+            } else {
+                mensagemErro.innerHTML = ''
+            }
+        });
+    </script>
+</body>
+
+</html>

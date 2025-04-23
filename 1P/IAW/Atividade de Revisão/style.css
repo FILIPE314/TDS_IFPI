@@ -1,0 +1,64 @@
+body {
+    color: rgb(60, 123, 238);
+    background-color: lightblue;
+    font-family: sans-serif;
+    margin: 0%;
+}
+body img {
+    border: 5px solid rgb(218, 67, 218);
+    border-radius: 30px;
+    margin: 15px;
+}
+body table tr, td, th {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+th {
+    background-color: black;
+}
+.zebra {
+    background-color: gray;
+}
+.zebra2 {
+    background-color: darkgray;
+}
+h1 {
+    background-color: blueviolet;
+    color: aliceblue;
+    margin: 0%;
+    padding: 10px;
+}
+h2 {
+    border-left: 10px solid blueviolet;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.p2 {
+    background-color: blueviolet;
+    color: aliceblue;
+    padding-left: 10px;
+}
+p {
+    padding-left: 15px;
+}
+table {
+    padding-left: 10px;
+}
+h3 {
+    text-align: right;
+}

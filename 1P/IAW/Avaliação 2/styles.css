@@ -1,0 +1,204 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article, aside {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 20px;
+}
+
+aside {
+    border-bottom: 1px solid white;
+}
+
+body div main div aside li {
+    margin: auto;
+    border-radius: solid 2px aqua;
+    margin-top: 50px;
+}
+
+body div main div aside a {
+    color: white;
+    text-decoration: none;   
+    transition: 1s;
+    border: 3px transparent;
+    padding: 5px;
+    background: linear-gradient(to right, darkblue, purple);
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+body div main div aside a:hover {
+    color: black;
+    text-decoration: underline;
+    background: lightblue;
+    cursor: pointer;
+    box-shadow: 0 0 20px lightblue;
+    border: 3px linear-gradient(to right, darkblue, purple);
+}
+
+article a {
+    color: white;   
+    transition: 0.5s;
+}
+
+article a:hover {
+    color: black;
+    text-decoration: underline;
+    background: lightblue;
+    cursor: pointer;
+    box-shadow: 0 0 20px lightblue;
+    border: 3px linear-gradient(to right, darkblue, purple);
+}
+
+h1 {
+    background-color: rgb(1, 1, 61);
+    border-radius: 0px 0px 30px 30px;
+    border: solid 1px white;
+    border-top: transparent;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: rgb(1, 1, 61);
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid white;
+}
+
+nav {
+    border-bottom: 1px solid white;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.corpo {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-right: 12px;
+}
+
+.navegação {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.b1 {
+    height: 50px;
+    width: 200px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 3px transparent;
+    margin: 10px;
+}
+
+.b1:hover {
+    background: lightblue;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0 0 20px lightblue;
+    border: 3px transparent;
+}
+
+footer {
+    background-color: rgb(1, 1, 61);
+    color: white;
+    padding: 30px;
+    font-size: 18px;
+    border-top: 1px solid white;
+}
+
+.direita {
+    text-align: right;
+}
+
+body div header img {
+    height: 100px;
+    width: auto;
+    margin-bottom: -50px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 20px lightblue;
+    border: 3px transparent;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;   
+    position: relative; 
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 1s;
+}
+
+body div header img:hover {
+    transform: rotatey(360deg);
+}
+
+.insta {
+    background-image: url(imagens/insta.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    text-indent: -99999px;
+    border-radius: 10px;
+    margin-bottom: -200px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 20px lightblue;
+    border: 3px transparent;
+    margin-left: 20px;
+}
+
+.github {
+    background-image: url(imagens/github.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    text-indent: -99999px;
+    border-radius: 150px;
+    display: grid;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 20px lightblue;
+    border: 3px transparent;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+article img {
+    width: 50%;
+    height: auto;
+    transition: 0.5s;
+    box-shadow: 0 0 30px red;
+    border: 3px transparent;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.p1 {
+    font-size: 13px;
+    color:gray;
+}

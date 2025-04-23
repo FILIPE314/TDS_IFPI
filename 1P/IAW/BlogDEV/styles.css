@@ -1,0 +1,113 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar {
+    background-color: lightblue;
+  }
+  
+  .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .nav-link {
+    color: #555;
+  }
+  
+  .nav-link:hover {
+    color: #333;
+  }
+  
+  .main-title {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .post-title {
+    font-size: 1.4rem;
+    color: #007bff;
+  }
+  
+  .post-excerpt {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .post-thumbnail img {
+    border-radius: 5px;
+  }
+  
+  .btn-outline-secondary {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+
+  article {
+    background-color: lightblue;
+  }
+  
+  .sidebar-title {
+    font-size: 1.3rem;
+    color: #007bff;
+  }
+  
+  .box {
+    background-color: lightblue;
+    border-radius: 5px;
+  }
+  
+  .nav-link {
+    color: #555;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  footer {
+    background: linear-gradient(to bottom, lightblue, darkslategray);
+    color: black;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 1.5rem;
+    }
+  
+    .post-title {
+      font-size: 1.3rem;
+    }
+  
+    .post-excerpt {
+      font-size: 1rem;
+    }
+  
+    .col-md-3, .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }

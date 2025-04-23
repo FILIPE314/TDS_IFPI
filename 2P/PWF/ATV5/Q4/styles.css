@@ -1,0 +1,17 @@
+.caixa {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+}
+.novoEstilo {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+}
