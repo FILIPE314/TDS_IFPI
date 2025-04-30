@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro treinos</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div>
+        <h1>Lista de registro de treinos</h1>
+    </div>
+    
+    <div>
+        <% if (treinos.length > 0) {%>
+            <table>
+                <tr>
+                    <th>DIA DA SEMANA</th>
+                    <th>NOME EXERCÍCIO</th>
+                    <th>DURAÇÃO (min)</th>
+                </tr>
+
+                <% for (let i = 0; i < treinos.length; i++){%>
+                    <tr>
+                        <td><%= treinos[i].dia %></td>
+                        <td><%= treinos[i].nome %></td>
+                        <td><%= treinos[i].duracao %></td>
+                    </tr>
+                <% } %>
+            </table>    
+
+        <%} else {%>
+            <span>Não existem treinos registrados</span>
+        <% }%> <br><br>
+
+        <a href="/registro">Registrar novo treino</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto livraria</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div>
+        <h1>Livros cadastrados</h1>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>TÍTULO</th>
+                <th>AUTOR</th>
+                <th>ANO</th>
+                <th>GÊNERO</th>
+            </tr>
+            
+            <% for (let i = 0; i < livros.length; i++) { %>
+                <tr>
+                    <td><%= livros[i].titulo %></td>
+                    <td><%= livros[i].autor %></td>
+                    <td><%= livros[i].ano %></td>
+                    <td><%= livros[i].genero %></td>
+                </tr>
+            <% } %>
+        </table><br><br>
+
+        <a href="/livro_form">Cadastrar novo livro</a>
+    </div>
+</body>
+</html>

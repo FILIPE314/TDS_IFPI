@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto livraria</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Livros</h1>
+        <h2>Preencha os campos abaixo para cadastrar um livro</h2>
+    </div>
+
+    <div>
+        <form action="/livro" method="post">
+            <label for="titulo">Título: </label>
+            <input type="text" name="titulo" id="titulo" placeholder="Digite o título: "><br><br>
+
+            <label for="autor">Nome autor: </label>
+            <input type="text" name="autor" id="autor" placeholder="Digite o nome do autor: "><br><br>
+
+            <label for="ano">Ano de publicação: </label>
+            <input type="number" name="ano" id="ano" placeholder="Digite o ano de publicação: "><br><br>
+
+            <label for="genero">Escolha o gênero do filme: </label>
+            <select name="genero" id="genero">
+                <option value="Ficção">Ficção</option>
+                <option value="Não Ficção">Não Ficção</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Biografia">Biografia</option>
+            </select><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

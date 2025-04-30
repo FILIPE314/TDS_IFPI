@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de operações</h1>
+    <table>
+        <tr>
+            <th>DATA</th>   
+            <th>CÓDIGO</th>   
+            <th>TIPO</th>   
+            <th>QUANTIDADE</th>   
+            <th>PREÇO</th>   
+            <th>VALOR BRUTO</th>   
+            <th>VALOR LÍQUIDO</th>   
+        </tr>
+        <% for (let i = 0; i < lista_operacoesg.lenth; i++) { %>
+            <tr>
+                <td><%= lista_operacoes[i].data %></td>   
+                <td><%= lista_operacoes[i].codigo %></td>
+                <td><%= lista_operacoes[i].tipo %></td>
+                <td><%= lista_operacoes[i].quantidade %></td>
+                <td><%= lista_operacoes[i].preco %></td>
+                <td><%= lista_operacoes[i].valorBruto %></td>
+                <td><%= lista_operacoes[i].valorLiquido %></td>
+            </tr>
+        <% } %>
+    </table><br>
+
+    <a href="/nova_operacao">Realizar outra operação</a>
+
+</body>
+</html>

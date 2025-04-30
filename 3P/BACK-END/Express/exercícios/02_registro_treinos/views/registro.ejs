@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro treinos</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div>
+        <h1>Registro de treinos</h1>
+        <h3>Prencha as informações do seu treino no formulário abaixo</h3>
+    </div>
+    
+    <div>
+        <form action="/registro" method="post">
+            <label for="dia">Dia da semana: </label>
+            <select name="dia" id="dia">
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terça-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quinta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select><br><br>
+
+            <label for="nome">Nome do exercício: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome do exercício"><br><br>
+
+            <label for="duracao">Duração do treino em minutos: </label>
+            <input type="number" name="duracao" id="duracao" placeholder="Digite a duração: "><br><br>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>

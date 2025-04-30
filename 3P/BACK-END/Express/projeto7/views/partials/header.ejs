@@ -1,0 +1,23 @@
+<% if (pageActive == "home") {%>
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="/operacoes">Operações</a></li>
+    <li><a href="/sobre">Sobre</a></li>
+  </ul>
+
+<% } else if (pageActive == "operacoes") {%>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="/operacoes">Operações</a></li>
+    <li><a href="/sobre">Sobre</a></li>
+  </ul>
+
+<% } else {%>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/operacoes">Operações</a></li>
+    <li><a class="active" href="/sobre">Sobre</a></li>
+  </ul>
+<% } %>
+
+

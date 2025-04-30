@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico</title>
+    <link rel="stylesheet" href="/stylesheets/historico.css">
+    <!-- <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: gray;
+        }
+    </style> -->
+</head>
+<body>
+    <div>        
+        <h1>HISTÓRICO</h1>
+        <% if (registrosFeitos.length > 0) { %>
+            <table>
+                <tr>
+                    <th>DISCIPLINA</th>
+                    <th>NOTA 1</th>
+                    <th>NOTA 2</th>
+                    <th>MEDIA</th>
+                </tr>
+                <% for (let i = 0; i < registrosFeitos.length; i++) { %>
+                    <tr>
+                        <td><%= registrosFeitos[i].disciplina %></td>   
+                        <td><%= registrosFeitos[i].n1 %></td>
+                        <td><%= registrosFeitos[i].n2 %></td>
+                        <td><%= registrosFeitos[i].media %></td>
+                    </tr>
+                <% } %>
+            </table>
+            
+        <% } else {%>
+            <span>Não existem registros feitos</span>
+        <% } %>
+        <br><br>
+        <a href="/registro">Fazer novo registro</a>
+    </div> 
+</body>
+</html>

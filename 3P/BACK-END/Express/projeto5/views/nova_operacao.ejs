@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastrar nova operação</h1>
+    
+    <div>
+        <form action="nova_operacao" method="post">
+            <label for="data">Data: </label>
+            <input type="date" name="data" id="data"><br><br>
+
+            <label for="codigo">Código: </label>
+            <select name="codigo" id="codigo">
+                <option value="ITSA4">ITSA4</option>
+                <option value="BBSE3">BBSE3</option>
+            </select><br><br>
+            
+            <input type="radio" name="tipo" value="compra" id="icompra">
+            <label for="icompra">Compra</label>
+            <input type="radio" name="tipo" value="venda" id="ivenda" >
+            <label for="ivenda">Venda</label> <br><br>
+
+            <label for="quantidade">Quantidade: </label>
+            <input type="number" name="quantidade" id="quantidade" min="1"> <br><br>
+
+            <label for="preco">Preço: </label>
+            <input type="number" name="preco" id="preco"><br><br>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,19 +1,17 @@
 {
-  "name": "fili3.14",
+  "name": "projeto_suap",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Carlos",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "node": "^20.19.1",
     "nodemon": "^3.1.9"
   }
 }
